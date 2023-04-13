@@ -3,6 +3,7 @@
 
     <NavbarSection />
     <HeroSection />
+    <AboutSection />
     <SocialLinks />
     
   </div>
@@ -14,12 +15,15 @@
 import NavbarSection from '@/components/NavbarSection.vue'
 import HeroSection from '@/components/HeroSection.vue';
 import SocialLinks from '@/components/SocialLinks.vue';
+import AboutSection from '@/components/AboutSection.vue';
+
 
 export default {
   components: {
    NavbarSection,
    HeroSection,
-   SocialLinks
+   SocialLinks,
+   AboutSection
   }
 }
 </script>
