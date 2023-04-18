@@ -5,19 +5,21 @@
     <HeroSection />
     <AboutSection />
     <ProjectsSection />
+
+    <SkillsSection />
     <SocialLinks />
 
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 
 import NavbarSection from '@/components/NavbarSection.vue'
 import HeroSection from '@/components/HeroSection.vue';
 import SocialLinks from '@/components/SocialLinks.vue';
 import AboutSection from '@/components/AboutSection.vue';
 import ProjectsSection from '@/components/ProjectsSection.vue'
+import SkillsSection from './components/SkillsSection.vue';
 
 export default {
   components: {
@@ -25,7 +27,8 @@ export default {
    HeroSection,
    SocialLinks,
    AboutSection,
-   ProjectsSection
+   ProjectsSection,
+   SkillsSection
   }
 }
 
