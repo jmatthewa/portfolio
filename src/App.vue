@@ -5,8 +5,8 @@
     <HeroSection />
     <AboutSection />
     <ProjectsSection />
-
     <SkillsSection />
+    <ContactSection />
     <SocialLinks />
 
   </div>
@@ -20,6 +20,7 @@ import SocialLinks from '@/components/SocialLinks.vue';
 import AboutSection from '@/components/AboutSection.vue';
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import SkillsSection from './components/SkillsSection.vue';
+import ContactSection from './components/ContactSection.vue';
 
 export default {
   components: {
@@ -28,7 +29,8 @@ export default {
    SocialLinks,
    AboutSection,
    ProjectsSection,
-   SkillsSection
+   SkillsSection,
+   ContactSection
   }
 }
 
