@@ -1,8 +1,8 @@
 <template>
-    <div name="skills" class="bg-gradient-to-b from-gray-800 to-black w-full h-screen">
+    <div id="skills" class="bg-gradient-to-b from-gray-800 to-black w-full h-full md:h-screen">
         <div class="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
             <div>
-                <p class="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Skills</p>
+                <p class=" text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Skills</p>
                 <p class="py-6">These are the technologies I've worked with</p>
             </div>
 

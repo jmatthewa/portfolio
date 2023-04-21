@@ -1,15 +1,17 @@
 <template>
-  <div class="home">
+ 
 
-    <NavbarSection />
-    <HeroSection />
-    <AboutSection />
-    <ProjectsSection />
-    <SkillsSection />
-    <ContactSection />
-    <SocialLinks />
+  <NavbarSection />
+  <HeroSection />
+  <AboutSection />
+  <ProjectsSection />
+  <SkillsSection />
+  <ContactSection />
+  <SocialLinks />
 
-  </div>
+
+
+
 </template>
 
 <script>

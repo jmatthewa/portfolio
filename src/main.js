@@ -8,10 +8,12 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import './assets/tailwind.css'
 
+
 library.add(fas,fab)
 
 createApp(App)
 .component('fa', FontAwesomeIcon)
 .use(store)
 .use(router)
+
 .mount('#app')

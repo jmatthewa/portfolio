@@ -1,5 +1,5 @@
 <template>
-    <div name="contact" class="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white">
+    <div id="contact" class="w-full h-full md:h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white">
         <div class="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
             <div class="pb-8">
               
