@@ -4,7 +4,9 @@
             <div class="flex flex-col justify-center h-full">
                 <transition name="slide" appear>
                     <h2  class=" text-4xl  sm:text-7xl  font-bold text-white">
-                        I'm a Full Stack Developer
+                        I'm a
+                        <span class="typed-text"> {{ typeValue }}</span>
+                        <span  :class="{'typing': typeStatus}" class="cursor inline ml-1 w-1">&nbsp;</span>
                     </h2>
                 
                 </transition>
@@ -48,10 +50,25 @@ import HeroImage from '../assets/heroImage.png'
 export default {
     setup() {
 
-
-     
+        const typeValue = ''
+        const typeStatus = false
+        const typeArray = ['fun','try','awesome']
+        const typingSpeed = 200
+        const erasingSpeed = 100
+        const newTextDelay = 2000
+        const typeArrayIndex = 0
+        const charIndex = 0
+        
         return {
-            HeroImage
+            HeroImage,
+            typeValue,
+            typeStatus,
+            typeArray,
+            typingSpeed,
+            erasingSpeed,
+            newTextDelay,
+            typeArrayIndex,
+            charIndex
         }
     },
     methods: {
@@ -59,7 +76,7 @@ export default {
         
             const element = document.getElementById(id);
             element.scrollIntoView({ behavior: 'smooth' });
-    }
+        }
     }
 }
 </script>
@@ -84,5 +101,25 @@ export default {
 .slide2-enter-from{
   transform: translateX(100px);
   opacity: 0;
+}
+
+
+span.typed-text{
+
+}
+span.cursor.typing {
+    animation: none;
+}
+
+span.cursor {
+    background-color: #fff;
+    animation: cursorBlink 1s infinite;
+   
+}
+
+@keyframes cursorBlink {
+    49% { background-color: #fff;}
+    50% { background-color: transparent;}
+    99% { background-color: transparent;}
 }
 </style>

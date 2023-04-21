@@ -1,6 +1,5 @@
 <template>
-    <div id="about" class="w-full h-full bg-gradient-to-b from-gray-800 to-black text-white
-        ">
+    <div id="about" class="w-full h-full bg-gradient-to-b from-gray-800 to-black text-white md:h-screen">
 
         <div class="max-w-screen-lg  mx-auto flex flex-col p-4 justify-center items-center  w-full h-full md:flex-row ">
             <transition name="slide2" appear>

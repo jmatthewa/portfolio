@@ -11,17 +11,17 @@
                   </div>
             </transition>
 
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+            <div class="relative grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 
                 
                   
-                        <div  v-for="project in projects" :key="project.id" class="shadow-md shadow-gray-600 rounded-lg">
+                        <div  v-for="project in projects" :key="project.id" class="group shadow-md shadow-gray-600 rounded-lg">
                             <transition name="slide2" appear>
                             
-                                  <img :src="project.src" alt="" class="rounded-md duration-200 hover:scale-105 hover:opacity-20">
+                                  <img :src="project.src" alt="" class=" rounded-md duration-200 hover:scale-105  group-hover:opacity-20">
                                   
                               </transition>
-                              <span class="text-2xl font-bold text-white tracking-wider">
+                              <span class="group-hover:block hidden p-1 absolute top-0 text-2xl font-bold text-white tracking-wider">
                                     {{ project.title }}
                               </span>
                          

@@ -1,5 +1,5 @@
 <template>
-    <div class="h-34 flex flex-col items-center justify-center text-white bg-gradient-to-b from-gray-800 to-black">
+    <div class="p-5 h-34 flex flex-col items-center justify-center text-white bg-gradient-to-b from-gray-800 to-black">
         <div class="flex flex-col ">
             <h1 class="flex text-5xl p-5 font-signature items-center justify-center">Matt</h1>
 
