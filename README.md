@@ -20,7 +20,6 @@ This is my personal portfolio website built using Vue.js and Tailwind CSS.
 ## Getting Started
 ```
 To run this project on your local machine, follow these steps:
-
 ```
 ### 1. Clone the repository:
 
@@ -28,7 +27,7 @@ To run this project on your local machine, follow these steps:
 
 ### 2. Install the dependencies: 
 
->cd the-strawhat-fit  
+>cd portfolio  
 >npm install
 
 ### 3. Start the development server:
