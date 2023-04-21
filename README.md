@@ -1,24 +1,36 @@
-# portfolio
-
-## Project setup
+# My Portfolio
 ```
-npm install
+This is my personal portfolio website built using Vue.js and Tailwind CSS.
 ```
-
-### Compiles and hot-reloads for development
+## Features
 ```
-npm run serve
+- Home page with an introduction and links to social media profiles  
+- Portfolio page showcasing my projects with descriptions, screenshot, and links  
+- About page with my background, skills, and interest  
+- Contact page with a contact form
 ```
-
-### Compiles and minifies for production
+## Technologies Used
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+- Vue.js  
+- Tailwind CSS  
+- Font Awesome(for icons)  
+- HTML
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Getting Started
+```
+To run this project on your local machine, follow these steps:
+
+```
+### 1. Clone the repository:
+
+>git clone https://github.com/jmatthewa/portfolio
+
+### 2. Install the dependencies: 
+
+>cd the-strawhat-fit  
+>npm install
+
+### 3. Start the development server:
+
+>npm run serve
