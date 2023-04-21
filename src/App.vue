@@ -8,7 +8,7 @@
   <SkillsSection />
   <ContactSection />
   <SocialLinks />
-
+  <FooterSection />
 
 
 
@@ -23,6 +23,8 @@ import AboutSection from '@/components/AboutSection.vue';
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import SkillsSection from './components/SkillsSection.vue';
 import ContactSection from './components/ContactSection.vue';
+import FooterSection from './components/FooterSection.vue';
+
 
 export default {
   components: {
@@ -32,7 +34,8 @@ export default {
    AboutSection,
    ProjectsSection,
    SkillsSection,
-   ContactSection
+   ContactSection,
+   FooterSection
   }
 }
 
