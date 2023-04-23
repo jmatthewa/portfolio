@@ -5,11 +5,16 @@
                 <transition name="slide" appear>
                     <h2  class=" text-4xl  sm:text-7xl  font-bold text-white">
                         I'm a
-                        <span class="typed-text"> {{ typeValue }}</span>
-                        <span  :class="{'typing': typeStatus}" class="cursor inline ml-1 w-1">&nbsp;</span>
-                    </h2>
+                   </h2>
+    
                 
                 </transition>
+                <h3 class="pt-2">
+                    <span class="typed-text text-white"> {{ typingText }}</span>
+                <span   class="cursor inline ml-1 w-1">&nbsp;</span>
+             
+                </h3>
+                
                 <transition name="slide2" appear>
                 
                     <p class="text-gray-500 py-4 max-w-md">
@@ -43,41 +48,58 @@
 
 
 
+import { computed, ref, onMounted } from 'vue';
 import HeroImage from '../assets/heroImage.png'
 
 
 
 export default {
+    
     setup() {
 
-        const typeValue = ''
-        const typeStatus = false
-        const typeArray = ['fun','try','awesome']
-        const typingSpeed = 200
-        const erasingSpeed = 100
-        const newTextDelay = 2000
-        const typeArrayIndex = 0
-        const charIndex = 0
-        
+        const words = ref(['Front-end Developer','Back-end Developer','Full-stack Developer']);
+        const currentIndex = ref(0);
+        const currentWord = computed(() => words.value[currentIndex.value]);
+        const currentLetterIndex = ref(0);
+
+        const typingText = computed(() => {
+        return currentWord.value.substring(0, currentLetterIndex.value);
+        });
+
+        const startTyping = () => {
+        setInterval(() => {
+            if (currentLetterIndex.value < currentWord.value.length) {
+            currentLetterIndex.value++;
+            } else {
+            currentLetterIndex.value = 0;
+            currentIndex.value++;
+            if (currentIndex.value >= words.value.length) {
+                currentIndex.value = 0;
+            }
+            }
+        }, 100);
+    };
+
+    onMounted(() => {
+      startTyping();
+    });
         return {
             HeroImage,
-            typeValue,
-            typeStatus,
-            typeArray,
-            typingSpeed,
-            erasingSpeed,
-            newTextDelay,
-            typeArrayIndex,
-            charIndex
+            typingText
+
         }
     },
+  
     methods: {
         scroll(id) {
         
             const element = document.getElementById(id);
             element.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
+        },
+    },
+
+        
+    
 }
 </script>
 <style>
@@ -103,10 +125,6 @@ export default {
   opacity: 0;
 }
 
-
-span.typed-text{
-
-}
 span.cursor.typing {
     animation: none;
 }
