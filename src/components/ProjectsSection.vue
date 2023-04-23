@@ -21,8 +21,11 @@
                                   <img :src="project.src" alt="" class=" rounded-md duration-200 hover:scale-105  group-hover:opacity-20">
                                   
                               </transition>
-                              <span class="group-hover:block hidden p-1 absolute top-0 text-2xl font-bold text-white tracking-wider">
+                              <span class="group-hover:block hidden p-1 top-32 absolute border-b-2  text-2xl font-bold text-white tracking-wider">
                                     {{ project.title }}
+                              </span>
+                              <span class="group-hover:block hidden p-1 top-44 absolute font-bold text-gray-500">
+                                    {{ project.tech }}
                               </span>
                          
                               <div class="flex items-center justify-center">
@@ -49,13 +52,19 @@ export default {
             {
                   id: 1,
                   src: project,
-                  title: 'Vue JS project'
+                  title: 'My Portfolio',
+                  tech: 'VueJS, Tailwind CSS',
+                  code: '',
+                  live: ''
+
             },
             {
                   id: 2,
                   src: project2,
                   code: 'https://github.com/jmatthewa/the-strawhat-fit',
-                  live: 'https://strawhatfit.pages.dev/'
+                  live: 'https://strawhatfit.pages.dev/',
+                  title: 'The Strawhat Fit',
+                  tech: 'VueJS, CSS, Javascript'
             },
             {
                   id: 3,
