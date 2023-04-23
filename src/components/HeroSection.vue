@@ -18,8 +18,7 @@
                 <transition name="slide2" appear>
                 
                     <p class="text-gray-500 py-4 max-w-md">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque quae molestiae, laboriosam dolorem perferendis inventore ut perspiciatis reiciendis vol
-                        uptates voluptatum earum sed natus? Consequuntur deleniti nisi animi esse a!
+                        Hello and welcome! My name is James Matthew, and I am a web developer building user-friendly, responsive, and visually appealing websites and web applications
                     </p>
                     
                 </transition>
