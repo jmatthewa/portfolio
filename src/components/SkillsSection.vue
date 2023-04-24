@@ -1,14 +1,27 @@
 <template>
     <div id="skills" class="bg-gradient-to-b from-gray-800 to-black w-full h-full md:h-screen">
         <div class="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-            <div>
+            <div v-motion-slide-visible-left class="duration-500">
                 <p class=" text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Skills</p>
                 <p class="py-6">These are the technologies I've worked with</p>
             </div>
 
             <div class="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 sm:px-0">
-                <div  v-for="skill in skills" :key="skill.id" :class="skill.style" class="shadow-md hover:scale-105 duration-500 py-2 rounded-lg">
-                    <img :src="skill.src" class="w-20 mx-auto">
+                <div  v-for="skill in skills" :key="skill.id" :class="skill.style" 
+                  
+                v-motion
+                  :initial="{
+                        scale: 0,
+    
+                  }"
+                  :visible="{
+                        scale: 1,
+                    
+                  }"
+                  :delay="skill.id * 200"
+                class="shadow-md  duration-500 py-2 rounded-lg"
+       >
+                    <img :src="skill.src" class="w-20 mx-auto hover:scale-150 duration-500">
                     <p class="mt-4">{{ skill.title }}</p>
                 </div>
             </div>
@@ -93,6 +106,3 @@ export default {
     }
 }
 </script>
-<style lang="">
-    
-</style>
