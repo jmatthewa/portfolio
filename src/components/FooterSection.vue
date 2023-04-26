@@ -7,6 +7,8 @@
                 <a href="https://www.linkedin.com/in/james-matthew-atanacio-0b0882173/"  target="_blank"> <fa :icon="['fab','linkedin']" size="xl"/></a>
                 <a href="https://github.com/jmatthewa"   target="_blank"><fa :icon="['fab','github']" size="xl"/></a>
                 <a href="mailto:matthew_1147@yahoo.com"  target="_blank"><fa :icon="['fas','envelope']" size="xl"/></a>
+                <a href="/cv.pdf" download="JamesMatthewCV"><fa :icon="['fas','id-card']" size="xl"/></a>
+          
             </div>
 
 
