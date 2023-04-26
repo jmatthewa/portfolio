@@ -64,7 +64,7 @@ export default {
                   title: 'My Portfolio',
                   tech: 'VueJS, Tailwind CSS',
                   code: 'https://github.com/jmatthewa/portfolio',
-                  live: ''
+                  live: 'https://jamesmatthew.pages.dev/'
 
             },
             {
