@@ -20,7 +20,7 @@
           </li>
 
                 <li class="flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 first:rounded-tr-md last:rounded-br-md">
-                    <a href="../assets/cv.pdf" class="flex justify-between items-center w-full text-white" download>
+                    <a href="/cv.pdf" class="flex justify-between items-center w-full text-white" download="JamesMatthewCV">
                     Resume <fa :icon="['fas','id-card']" size="xl"/>
                 </a>
               </li>
@@ -28,3 +28,11 @@
         </ul>
     </div>
 </template>
+<script>
+
+
+export default {
+    setup() {
+    }
+}
+</script>
