@@ -16,7 +16,7 @@
                   v-motion
                   :initial="{
                         opcaity: 0,
-                        x: mobile? 0: -350
+                        x: mobile? 0: -200
                   }"
                   :visible="{
                         opacity: 1,
