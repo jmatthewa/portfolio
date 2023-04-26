@@ -63,7 +63,7 @@ export default {
                   src: project,
                   title: 'My Portfolio',
                   tech: 'VueJS, Tailwind CSS',
-                  code: '',
+                  code: 'https://github.com/jmatthewa/portfolio',
                   live: ''
 
             },
