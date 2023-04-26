@@ -18,7 +18,7 @@
                         scale: 1,
                     
                   }"
-                  :delay="skill.id * 200"
+                  :delay="skill.id * 150"
                 class="shadow-md  duration-500 py-2 rounded-lg"
        >
                     <img :src="skill.src" class="w-20 mx-auto hover:scale-150 duration-700">
@@ -45,55 +45,55 @@ export default {
         
         const skills = [
             {
-                id:1,
+                id:4,
                 src: css,
                 title: 'CSS',
                 style: 'shadow-blue-500'
             },
             {
-                id:2,
+                id:5,
                 src: github,
                 title: 'Github',
                 style: 'shadow-gray-500'
             },
             {
-                id:3,
+                id:6,
                 src: html,
                 title: 'HTML',
                 style: 'shadow-orange-500'
             },
             {
-                id:4,
+                id:7,
                 src: javascript,
                 title: 'JavaScript',
                 style: 'shadow-yellow-500'
             },
             {
-                id:5,
+                id:8,
                 src: mongo,
                 title: 'MongoDB',
                 style: 'shadow-green-500'
             },
             {
-                id:6,
+                id:9,
                 src: node,
                 title: 'Node',
                 style: 'shadow-green-500'
             },
             {
-                id:7,
+                id:10,
                 src: reactI,
                 title: 'React',
                 style: 'shadow-blue-500'
             },
             {
-                id:8,
+                id:11,
                 src: tailwind,
                 title: 'Tailwind',
                 style: 'shadow-sky-500'
             },
             {
-                id:9,
+                id:12,
                 src: vue,
                 title: 'Vue',
                 style: 'shadow-green-500'

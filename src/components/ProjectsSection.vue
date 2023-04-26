@@ -16,7 +16,7 @@
                   v-motion
                   :initial="{
                         opcaity: 0,
-                        x: -150
+                        x: mobile? 0: -350
                   }"
                   :visible="{
                         opacity: 1,
@@ -56,6 +56,7 @@ import project2 from '../assets/project2.png'
 export default {
     setup() {
 
+      const mobile = window.innerWidth<=768 ? true : false
       const projects = [
             {
                   id: 1,
@@ -80,7 +81,7 @@ export default {
             }
       ]
 
-      return { projects }
+      return { projects,mobile }
     },
 }
 </script>

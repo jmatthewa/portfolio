@@ -75,27 +75,28 @@ export default {
                 currentIndex.value = 0;
             }
             }
-        }, 100);
-    };
+        }, 100)
+
+
+    }
+    function scroll(id){
+            const element = document.getElementById(id);
+            element.scrollIntoView({ behavior: 'smooth'})
+
+        }
+
 
     onMounted(() => {
       startTyping();
     });
+
         return {
             HeroImage,
-            typingText
+            typingText,
+            scroll
 
         }
-    },
-  
-    methods: {
-        scroll(id) {
-        
-            const element = document.getElementById(id);
-            element.scrollIntoView({ behavior: 'smooth' });
-        },
-    },
-
+    }
         
     
 }

@@ -17,16 +17,6 @@
 </template>
 <script>
 export default {
-    setup() {
-
-        // const date = new Date();
-
-        // return {
-
-        //     date
-        // }
-    }
-
 
 }
 </script>
