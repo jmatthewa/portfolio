@@ -21,7 +21,7 @@
                   :delay="skill.id * 150"
                 class="shadow-md  duration-500 py-2 rounded-lg"
        >
-                    <img :src="skill.src" class="w-20 mx-auto hover:scale-150 duration-700">
+                    <img :src="skill.src" class="cursor-pointer w-20 mx-auto hover:scale-150 duration-700">
                     <p class="mt-4">{{ skill.title }}</p>
                 </div>
             </div>

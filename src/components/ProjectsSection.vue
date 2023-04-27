@@ -23,7 +23,7 @@
                         x:0
                   }"
                   :delay="project.id * 150"
-                  class="duration-500 group shadow-md shadow-gray-600 rounded-lg">
+                  class="cursor-pointer duration-500 group shadow-md shadow-gray-600 rounded-lg">
          
                         <img :src="project.src" alt="" class=" rounded-md duration-200 hover:scale-105  group-hover:opacity-20">      
                         <span class="group-hover:block hidden p-1 top-32 absolute border-b-2  text-2xl font-bold text-white tracking-wider">
